@@ -10,8 +10,9 @@ public class contrario{
         tam = nome.length();
         esp = ' ';
         contrario = "";
-        for (i = 0; tam > i; i++ ){
-            letra = nome.charAt(i);
+        for (i = tam; i > 0; i-- ){
+            letra = nome.charAt(i-1);
+
             if (!(letra == esp)){
                 contrario = contrario + letra;
             }
